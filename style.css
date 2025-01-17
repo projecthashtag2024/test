@@ -16,33 +16,39 @@ body {
 .container {
   text-align: center;
   background-color: white;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-ul.links {
-  list-style: none;
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-ul.links li {
-  margin: 10px 0;
-}
-
-ul.links li a {
-  text-decoration: none;
+.button {
+  display: inline-block;
+  padding: 15px 40px;
   font-size: 18px;
-  color: #007bff;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #f8f9fa;
-  transition: background-color 0.3s;
+  text-decoration: none;
+  background-color: white;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 30px; /* 동그란 버튼 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-ul.links li a:hover {
-  background-color: #e2e6ea;
+.button:hover {
+  transform: translateY(3px); /* 마우스 오버 시 버튼이 눌리는 효과 */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+  transform: translateY(5px); /* 클릭 시 버튼이 더 눌리는 효과 */
 }
