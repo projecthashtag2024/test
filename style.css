@@ -19,6 +19,10 @@ body {
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* 세로로 배치 */
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -27,8 +31,8 @@ h1 {
 
 .button-container {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  flex-direction: column; /* 버튼들을 세로로 배열 */
+  gap: 20px; /* 버튼 사이 간격 */
 }
 
 .button {
