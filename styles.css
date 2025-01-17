@@ -50,9 +50,9 @@ h1 {
 
 .button:hover {
   transform: translateX(3px) translateY(3px); /* 마우스 오버 시 버튼이 눌리는 효과 */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 1);
 }
 
 .button:active {
-  transform: translateY(5px); /* 클릭 시 버튼이 더 눌리는 효과 */
+  transform: translateX(3px) translateY(2px); /* 클릭 시 */
 }
